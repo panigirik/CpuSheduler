@@ -1,0 +1,8 @@
+﻿//
+// Created by User on 07.02.2026.
+//
+
+#ifndef CPUSHEDULER_GANTT_GENERATOR_H
+#define CPUSHEDULER_GANTT_GENERATOR_H
+
+#endif //CPUSHEDULER_GANTT_GENERATOR_H

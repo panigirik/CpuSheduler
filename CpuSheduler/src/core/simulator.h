@@ -1,0 +1,8 @@
+﻿//
+// Created by User on 07.02.2026.
+//
+
+#ifndef CPUSHEDULER_SIMULATOR_H
+#define CPUSHEDULER_SIMULATOR_H
+
+#endif //CPUSHEDULER_SIMULATOR_H

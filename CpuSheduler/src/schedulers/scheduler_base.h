@@ -1,0 +1,8 @@
+﻿//
+// Created by User on 07.02.2026.
+//
+
+#ifndef CPUSHEDULER_SCHEDULER_BASE_H
+#define CPUSHEDULER_SCHEDULER_BASE_H
+
+#endif //CPUSHEDULER_SCHEDULER_BASE_H
