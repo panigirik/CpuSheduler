@@ -3,4 +3,5 @@ project(CpuSheduler)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(CpuSheduler src/main.cpp)
+add_executable(CpuSheduler main.cpp
+        main.cpp)
