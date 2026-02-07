@@ -1,8 +1,12 @@
-﻿//
-// Created by User on 07.02.2026.
-//
+﻿#pragma once
 
-#ifndef CPUSHEDULER_PARSER_H
-#define CPUSHEDULER_PARSER_H
+#include <filesystem>
+#include <vector>
 
-#endif //CPUSHEDULER_PARSER_H
+#include "../core/process.h"
+
+class Parser
+{
+public:
+    static std::vector<Process> parse_file(const std::filesystem::path& path);
+};

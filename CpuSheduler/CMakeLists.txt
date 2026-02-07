@@ -22,4 +22,7 @@ add_executable(CpuSheduler src/main.cpp
         src/utils/gantt_generator.h
         src/utils/csv_writer.cpp
         src/utils/csv_writer.h
+        src/core/simulation_config.h
+        src/schedulers/sjf_scheduler.cpp
+        src/schedulers/sjf_scheduler.h
 )

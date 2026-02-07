@@ -1,8 +1,11 @@
-﻿//
-// Created by User on 07.02.2026.
-//
+﻿#pragma once
 
-#ifndef CPUSHEDULER_FCFS_SCHEDULER_H
-#define CPUSHEDULER_FCFS_SCHEDULER_H
+#include "scheduler_base.h"
 
-#endif //CPUSHEDULER_FCFS_SCHEDULER_H
+class FCFSScheduler final : public SchedulerBase
+{
+public:
+    FCFSScheduler();
+
+    void run(const std::vector<Process>& processes) override;
+};

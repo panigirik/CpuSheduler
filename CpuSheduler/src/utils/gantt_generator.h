@@ -1,8 +1,12 @@
-﻿//
-// Created by User on 07.02.2026.
-//
+﻿#pragma once
 
-#ifndef CPUSHEDULER_GANTT_GENERATOR_H
-#define CPUSHEDULER_GANTT_GENERATOR_H
+#include <vector>
+#include <string>
 
-#endif //CPUSHEDULER_GANTT_GENERATOR_H
+#include "../core/scheduler_result.h"
+
+class GanttGenerator
+{
+public:
+    static std::string generate_text(const std::vector<GanttEntry>& entries);
+};

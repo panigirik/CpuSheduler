@@ -1,8 +1,15 @@
-﻿//
-// Created by User on 07.02.2026.
-//
+﻿#pragma once
 
-#ifndef CPUSHEDULER_CSV_WRITER_H
-#define CPUSHEDULER_CSV_WRITER_H
+#include <filesystem>
+#include <vector>
 
-#endif //CPUSHEDULER_CSV_WRITER_H
+#include "../core/scheduler_result.h"
+
+class CSVWriter
+{
+public:
+    static void write(
+        const std::filesystem::path& path,
+        const std::vector<SchedulerResult>& results
+    );
+};

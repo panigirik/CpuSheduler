@@ -2,13 +2,10 @@
 
 #include "scheduler_base.h"
 
-class RRScheduler final : public SchedulerBase
+class SJFScheduler final : public SchedulerBase
 {
 public:
-    explicit RRScheduler(int quantum);
+    SJFScheduler();
 
     void run(const std::vector<Process>& processes) override;
-
-private:
-    int quantum_;
 };

@@ -1,8 +1,25 @@
-﻿//
-// Created by User on 07.02.2026.
-//
+﻿#pragma once
 
-#ifndef CPUSHEDULER_SCHEDULER_BASE_H
-#define CPUSHEDULER_SCHEDULER_BASE_H
+#include <vector>
+#include <string>
 
-#endif //CPUSHEDULER_SCHEDULER_BASE_H
+#include "../core/process.h"
+#include "../core/scheduler_result.h"
+
+class SchedulerBase
+{
+public:
+    explicit SchedulerBase(std::string name);
+    virtual ~SchedulerBase() = default;
+
+    virtual void run(const std::vector<Process>& processes) = 0;
+
+    SchedulerResult get_result() const;
+
+protected:
+    void reset();
+
+protected:
+    std::string name_;
+    SchedulerResult result_;
+};

@@ -1,8 +1,22 @@
-﻿//
-// Created by User on 07.02.2026.
-//
+﻿#pragma once
 
-#ifndef CPUSHEDULER_SCHEDULER_RESULT_H
-#define CPUSHEDULER_SCHEDULER_RESULT_H
+#include <string>
+#include <vector>
 
-#endif //CPUSHEDULER_SCHEDULER_RESULT_H
+struct GanttEntry
+{
+    int start_time{};
+    int end_time{};
+    int process_id{};
+};
+
+struct SchedulerResult
+{
+    std::string algorithm_name;
+
+    double avg_waiting_time{};
+    double avg_turnaround_time{};
+    int context_switches{};
+
+    std::vector<GanttEntry> gantt_chart;
+};
